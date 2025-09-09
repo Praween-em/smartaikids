@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Smart AI Kids</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="#" id="logout-btn">Logout</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h1 class="section-title">Our Videos</h1>
+      <div id="videos-container" class="modules-grid">
+        <!-- Videos will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const token = localStorage.getItem('token');
+    if (!token) {
+      window.location.href = '/';
+    }
+
+    const logoutBtn = document.getElementById('logout-btn');
+    logoutBtn.addEventListener('click', () => {
+      localStorage.removeItem('token');
+      window.location.href = '/';
+    });
+
+    const videosContainer = document.getElementById('videos-container');
+
+    const fetchVideos = async () => {
+      try {
+        const res = await fetch('/api/videos', {
+          headers: {
+            'x-auth-token': token,
+          },
+        });
+
+        if (res.ok) {
+          const videos = await res.json();
+          displayVideos(videos);
+        } else {
+          const error = await res.json();
+          alert(error.message);
+          if (res.status === 401) {
+            window.location.href = '/';
+          }
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Server error');
+      }
+    };
+
+    const displayVideos = (videos) => {
+      videosContainer.innerHTML = '';
+      videos.forEach(video => {
+        const videoCard = document.createElement('div');
+        videoCard.classList.add('module-card');
+        videoCard.innerHTML = `
+          <div class="module-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="module-title">${video.title}</h3>
+          <p class="module-desc">${video.description}</p>
+          <button class="btn play-video-btn" data-video-src="${video.url}">Play Video</button>
+        `;
+        videosContainer.appendChild(videoCard);
+      });
+    };
+
+    fetchVideos();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

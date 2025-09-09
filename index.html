@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smart AI Kids</title>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">smart ai kids.in</div>
+    <ul class="nav-links">
+      <li><a style="font-size:20px" href="#home">Home</a></li>
+      <li><a style="font-size:20px" href="#about">About</a></li>
+      <li><a style="font-size:20px" href="#modules">Modules</a></li>
+      <li><a style="font-size:20px" href="#" id="login-btn" class="btn"" >Login</a></li>
+
+      <li><a href="#" id="signup-btn" class="btn">Sign Up</a></li>
+      <li><a href="/videos.html" id="videos-btn" class="btn" style="display: none;">Videos</a></li>
+      <li><a href="#" id="logout-btn-nav" class="btn" style="display: none;">Logout</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-inner">
+        <h1 class="hero-title" id="title">Transform your kids into </h1>
+        <br><span class="hero-title" style="color:rgba(0,255,209,0.9)"> smart AI kids </span>
+
+        <!-- underline SVG for stroke-draw -->
+        <div class="underline-wrap" aria-hidden="true">
+          <svg class="hero-underline" viewBox="0 0 320 26" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00ffd1"/>
+                <stop offset="1" stop-color="#8a2be2"/>
+              </linearGradient>
+            </defs>
+            <path d="M8 18 C 80 2, 240 34, 312 14"></path>
+          </svg>
+        </div>
+
+        <p class="hero-sub">Watch the laptop transform into an AI core — then learn how to build this & more in our 2-hour workshop.</p>
+
+        <div class="cta-row">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn">Free Demo Class</a>
+          <button class="btn secondary" id="learnBtn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <h2 class="section-title">About <span>smart ai kids.in</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+<p>Smart AI Kids.in is a fun and engaging platform that introduces children to the world of Artificial Intelligence through interactive lessons, games, and projects. We make learning AI simple, safe, and exciting for young minds.</p>
+
+<p>Our platform helps kids build creativity and problem-solving skills by teaching concepts like coding, robotics, and machine learning in a playful, age-appropriate way. With hands-on activities and guided courses, children learn how AI works and how it impacts the world around them.</p>
+
+<p>Founded in 2022 by educators and AI experts, Smart AI Kids.in is dedicated to making future-ready education accessible for every child. Our mission is to empower the next generation with AI knowledge, inspiring them to become innovators and creators of tomorrow.</p>
+
+        </div>
+        <div class="about-image">
+          <i class="fas fa-brain"></i>
+        </div>
+      </div>
+    </section>
+    
+    
+
+<section id="modules">
+  <h2 class="section-title">AI Workshop <span> Structure </span></h2>
+  <div class="modules-grid">
+    <div class="module-card">
+ <div class="module-icon">
+        <i class="fas fa-brain"></i>
+      </div>
+      <h3 class="module-title">🕐 Part 1 – Introduction & Mindset (10 min)</h3>
+      <p class="module-desc">
+        • What is AI? Relatable examples (YouTube, Instagram filters, ChatGPT).<br>
+        • Why prompting is the new skill (talking to AI in the right language).<br>
+        • Bad vs Good Prompt → immediate wow factor.
+      </p>
+    </div>
+
+    <!-- Part 2 -->
+    <div class="module-card">
+      <div class="module-icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <h3 class="module-title">🕑 Part 2 – AI for Content Creation ( The Art of Prompting 30 min)</h3>
+      <p class="module-desc">
+        <b>Genarating content using AI</b><br>
+        ( ChatGpt / DeepSeek / Gemini / Canva AI  ):<br>
+        • PDFs/ Notes / Documents / XL Sheets<br>
+        • PPT/Slides<br>
+        • Essays / Blog Content <br><br>
+        ⚡ <b>Activity:</b> Students pick a subject → generate a PDF/Slides.
+      </p>
+    </div>
+
+    <!-- Part 3 -->
+    <div class="module-card">
+      <div class="module-icon">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <h3 class="module-title">🕒 Part 3 – AI for Creative Media (20 min)</h3>
+      <p class="module-desc">
+        <b>Image Generation</b><br> (Canva AI / Stable Diffusion / DALL·E / ChatGpt):<br>
+        • "Genarating Images with AI"<br>
+        • "Generate an image of a futuristic classroom with robots teaching."<br><br>
+        <b>Video Generation</b> (Runway / Pika Labs / Kaiber AI / Gemini / VEO ):<br>
+        • "Generate a 10-sec rocket launch animation with text 'Aim High'."<br><br>
+        ⚡ <b>Activity:</b> Each student creates 1 poster/image → share.
+      </p>
+    </div>
+
+    <!-- Part 4 -->
+    <div class="module-card">
+      <div class="module-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3 class="module-title">🕓 Part 4 – AI for Coding (45 min)</h3>
+      <p class="module-desc">
+        (A) <b>HTML/CSS/JS Project – Resume Blog</b><br>
+        Prompt: "Generate a simple Resume website with name, education, hobbies."<br>
+        → Deploy on GitHub Pages.<br><br>
+        (B) <b>Python Mini Project – Quiz Game</b><br>
+        Prompt: "Generate Python code for a multiple-choice quiz game with 5 questions and score display."<br>
+        → Run in Replit / Online Python IDE.<br><br>
+        ⚡ <b>Activity:</b> Students edit their name & questions → run first project.
+      </p>
+    </div>
+
+    <!-- Part 5 -->
+    <div class="module-card">
+      <div class="module-icon">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <h3 class="module-title">🕔 Part 5 – Wrap-Up & Future Path (15 min)</h3>
+      <p class="module-desc">
+        • Recap: Prompting → Content → Media → Coding.<br>
+        • Showcase: "Look what you built in 2 hours with AI!"<br>
+        • Inspire: Real-world careers with AI.<br>
+        • Upsell: "Join our 10-hour advanced course → build chatbots, AI + IoT projects, and compete in hackathons."
+      </p>
+    </div>
+
+  </div>
+     
+    </section>
+
+    
+<section id="join">
+  <h2 class="section-title">Purchase <span>Access</span></h2>
+  <div class="join-container">
+    <p class="join-text">Purchase a video to get lifetime access to the content.</p>
+    
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3 class="pricing-title">Complete Course</h3>
+        <div class="pricing-price">₹199</div>
+        <ul class="pricing-features">
+          <h2>Unlock the power of AI in just <span style="color:#00ffd1">2 hours! </span> Specially designed for<span class="neon" > Grade 10 students.</span></h2>
+          <br><br>
+          <li><i style="color: #00ffd1;margin:5px" class="fas fa-check"></i> Hands-on learning with real AI tools and apps</li>
+           <li><i style="color: #00ffd1; margin:5px" class="fas fa-check"></i> Create PDFs, PPTs, and study materials instantly</li>
+            <li><i style="color: #00ffd1; margin:5px" class="fas fa-check"></i> Generate stunning images and videos with AI</li>
+      <li><i style="color: #00ffd1; margin:5px" class="fas fa-check"></i> Build your first website and Python game</li>
+        <li><i style="color: #00ffd1;margin:5px " class="fas fa-check"></i> No prior coding / AI experience needed</li>
+        <li><i style="color: #00ffd1;margin:5px " class="fas fa-check"></i> Perfect for class 8,9 and 10th students </li>
+       </ul>
+        <button class="btn">Purchase Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="login-close">&times;</span>
+      <h2 class="section-title" style="margin-bottom: 30px;">Login to <span>Your Account</span></h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="signup-close">&times;</span>
+      <h2 class="section-title" style="margin-bottom: 30px;">Create a <span>New Account</span></h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="••••••••" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content" style="max-width: 900px;">
+      <span class="close-btn" id="video-close">&times;</span>
+      <video id="video-player" width="100%" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Smart AI Kids.in</h3>
+        <p>Making AI education accessible and fun for the next generation of innovators and creators.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#modules">Workshop Structure</a></li>
+          <li><a href="#join">Join Now</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <div class="footer-contact">
+          <p><i class="fas fa-envelope"></i> aikidssmart@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2023 Smart AI Kids.in. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <canvas id="three-canvas" aria-hidden="true"></canvas>
+
+
+  <!-- CDN Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <script>
+  (function(){
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ---------- Text setup (split letters like anime.js demos) ----------
+    const titleEl = document.getElementById('title');
+    // wrap each letter in span. Preserve neon span inside.
+    function splitLetters(el){
+      const text = el.innerHTML;
+      // handle neon span specially
+      const temp = document.createElement('div');
+      temp.innerHTML = text;
+      // We'll create a combined array of nodes
+      const arr = [];
+      Array.from(temp.childNodes).forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const txt = node.textContent.trim();
+          if (txt) {
+            for (const ch of txt.split('')) arr.push({char: ch, neon: false});
+          }
+        } else {
+          // element node (e.g., span.neon). Keep its inner text as neon letters
+          const txt = node.textContent || '';
+          for (const ch of txt.split('')) arr.push({char: ch, neon: true});
+        }
+      });
+      // rebuild innerHTML
+      el.innerHTML = arr.map((o, i) => {
+        return `<span class="letter" data-neon="${o.neon?1:0}">${o.char === ' ' ? '&nbsp;' : o.char}</span>`;
+      }).join('');
+    }
+    splitLetters(titleEl);
+
+    // ---------- Three.js scene ----------
+    const canvas = document.getElementById('three-canvas');
+    const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x05050a, 0.02);
+
+    const camera = new THREE.PerspectiveCamera(50, window.innerWidth/window.innerHeight, 0.1, 100);
+    camera.position.set(0, 1.4, 6);
+
+    // lights
+    const hemi = new THREE.HemisphereLight(0xffffff, 0x222222, 0.6);
+    scene.add(hemi);
+    const pLight = new THREE.PointLight(0x00ffd1, 1.5, 20);
+    pLight.position.set(0, 2.5, 4);
+    scene.add(pLight);
+
+    // simple laptop: base + screen
+    const baseGeo = new THREE.BoxGeometry(2.6, 0.12, 1.6);
+    const baseMat = new THREE.MeshStandardMaterial({color:0x0b2330, metalness:0.6, roughness:0.18, emissive:0x001111, emissiveIntensity:0.02});
+    const base = new THREE.Mesh(baseGeo, baseMat);
+    base.position.set(0, 0.15, 0);
+    scene.add(base);
+
+    const screenGeo = new THREE.BoxGeometry(2.6, 1.5, 0.08);
+    const screenMat = new THREE.MeshStandardMaterial({color:0x071425, metalness:0.2, roughness:0.3, emissive:0x001a1a, emissiveIntensity:0.01});
+    const screen = new THREE.Mesh(screenGeo, screenMat);
+    screen.position.set(0, 0.9, -0.7);
+    screen.rotation.x = -0.6;
+    scene.add(screen);
+
+    // a subtle rim glow plane for the 'screen content' (emissive)
+    const screenContentGeo = new THREE.PlaneGeometry(2.36, 1.26);
+    const screenContentMat = new THREE.MeshBasicMaterial({color:0x002b2a, transparent:true, opacity:0.95});
+    const screenContent = new THREE.Mesh(screenContentGeo, screenContentMat);
+    screenContent.position.set(0, 0.9, -0.66);
+    screenContent.rotation.x = -0.6;
+    scene.add(screenContent);
+
+    // Particle system initially collapsed at laptop center
+    const PARTICLE_COUNT = 420; // moderate
+    const positions = new Float32Array(PARTICLE_COUNT * 3);
+    const startPositions = new Float32Array(PARTICLE_COUNT * 3);
+    for (let i=0;i<PARTICLE_COUNT;i++){
+      startPositions[i*3] = 0; startPositions[i*3+1] = 0.2; startPositions[i*3+2] = 0; // laptop center near hinge
+      positions[i*3] = startPositions[i*3];
+      positions[i*3+1] = startPositions[i*3+1];
+      positions[i*3+2] = startPositions[i*3+2];
+    }
+    const pGeo = new THREE.BufferGeometry();
+    pGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    const pMat = new THREE.PointsMaterial({size:0.04, vertexColors:false, color:0x00ffd1, transparent:true, opacity:0.95});
+    const points = new THREE.Points(pGeo, pMat);
+    scene.add(points);
+
+    // Precompute target positions on sphere-ish shell (orb)
+    const targetPositions = new Float32Array(PARTICLE_COUNT * 3);
+    const ORB_RADIUS = 1.5;
+    for (let i=0;i<PARTICLE_COUNT;i++){
+      // random spherical coordinates with slight noise
+      const u = Math.random();
+      const v = Math.random();
+      const theta = 2 * Math.PI * u;
+      const phi = Math.acos(2 * v - 1);
+      const r = ORB_RADIUS * (0.8 + 0.4 * Math.random()); // vary radius
+      const x = r * Math.sin(phi) * Math.cos(theta);
+      const y = r * Math.cos(phi) * 0.9 + 0.5; // lift a bit
+      const z = r * Math.sin(phi) * Math.sin(theta);
+      targetPositions[i*3] = x;
+      targetPositions[i*3+1] = y;
+      targetPositions[i*3+2] = z;
+    }
+
+    // Keep animation state
+    let animating = false;
+    let progress = {t:0};
+
+    // render loop
+    function render(){
+      requestAnimationFrame(render);
+      // gentle idle rotations for laptop and screen when not animating
+      if (!animating){
+        base.rotation.y += 0.002;
+        screen.rotation.y += 0.001;
+        points.rotation.y += 0.0008;
+      } else {
+        // while animating, slightly rotate the whole scene for drama
+        base.rotation.y *= 0.98;
+        points.rotation.y += 0.0012;
+      }
+      renderer.render(scene, camera);
+    }
+    render();
+
+    // resize
+    function onResize(){
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth/window.innerHeight;
+      camera.updateProjectionMatrix();
+    }
+    window.addEventListener('resize', onResize);
+
+    // ---------- Animation Sequence using anime.js timeline ----------
+    function playTransformation(){
+      if (prefersReduced) return; // respect reduced motion
+      if (animating) return;
+      animating = true;
+
+      // Step 1: title animation (per-letter)
+      const letters = document.querySelectorAll('.letter');
+      // color neon highlight on letters that have data-neon=1
+      letters.forEach(l => {
+        if (l.dataset.neon === '1') l.style.color = 'var(--accent)';
+      });
+
+      const tl = anime.timeline({
+        autoplay: false,
+        easing: 'easeOutExpo'
+      });
+
+      // letters - stagger fly-in with rotate (anime.js style)
+      tl.add({
+        targets: '.letter',
+        translateY: [120, 0],
+        rotateZ: [25, 0],
+        opacity: [0, 1],
+        duration: 900,
+        delay: anime.stagger(40)
+      }, 0);
+
+      // svg stroke draw (underline)
+      const path = document.querySelector('.hero-underline path');
+      const dash = anime.setDashoffset(path);
+      tl.add({
+        targets: path,
+        strokeDashoffset: [dash, 0],
+        duration: 900,
+        easing: 'easeInOutSine'
+      }, '-=600');
+
+      // subtitle fade in
+      tl.add({
+        targets: '.hero-sub',
+        translateY: [20, 0],
+        opacity: [0,1],
+        duration: 700
+      }, '-=450');
+
+      // CTAs appear
+      tl.add({
+        targets: '.cta-row .btn',
+        translateY: [40, 0],
+        opacity: [0, 1],
+        scale: [0.88, 1],
+        duration: 700,
+        delay: anime.stagger(120)
+      }, '-=400');
+
+      // After text polish, trigger 3D laptop -> orb timeline
+      tl.add({
+        begin: () => {
+          // subtle screen pulse
+          anime({
+            targets: screenContent.material,
+            // can't animate three.js material directly with anime; instead animate numeric prop and update in frame
+            duration: 700,
+            easing: 'easeOutCubic',
+            update: anim => {
+              // use opacity property as visual indicator (only set directly)
+              screenContent.material.opacity = 0.8 + 0.2 * Math.sin(anim.currentTime / 100);
+            }
+          });
+        }
+      }, '+=200');
+
+      // Step: animate laptop opening / 'charging' effect
+      tl.add({
+        duration: 900,
+        easing: 'easeInOutExpo',
+        update: () => {}, // no-op, we will use ANIME callbacks
+        begin: () => {
+          // rotate screen upwards and add bright emissive flash
+          anime({
+            targets: screen.rotation,
+            x: [-0.6, -0.05],
+            duration: 900,
+            easing: 'easeInOutQuad'
+          });
+          // base slight lift and flash emissive
+          anime({
+            targets: base.position,
+            y: [0.15, 0.25],
+            duration: 900,
+            easing: 'easeInOutQuad'
+          });
+          // emissive ramp
+          anime({
+            targets: [0],
+            duration: 900,
+            easing: 'easeInOutQuad',
+            update: anim => {
+              const v = Math.min(1, anim.progress / 100);
+              base.material.emissiveIntensity = 0.02 + 3 * v;
+              screen.material.emissiveIntensity = 0.01 + 4 * v;
+              pLight.intensity = 1.5 + 2.5 * v;
+            }
+          });
+        }
+      }, '+=100');
+
+      // Step: collapse laptop center into particle source and burst into orb
+      tl.add({
+        duration: 1200,
+        begin: () => {
+          // hide screenContent to make room for particles' glow
+          anime({
+            targets: screenContent.material,
+            opacity: [screenContent.material.opacity, 0],
+            duration: 300,
+            easing: 'easeOutQuad'
+          });
+
+          // animate progress from 0 -> 1 using a single tween; onUpdate we lerp positions
+          anime({
+            targets: progress,
+            t: [0,1],
+            duration: 1400,
+            easing: 'easeOutCubic',
+            update: () => {
+              const t = progress.t;
+              const posAttr = pGeo.attributes.position.array;
+              for (let i=0;i<PARTICLE_COUNT;i++){
+                // linear interpolation
+                const sx = startPositions[i*3], sy = startPositions[i*3+1], sz = startPositions[i*3+2];
+                const tx = targetPositions[i*3], ty = targetPositions[i*3+1], tz = targetPositions[i*3+2];
+                // ease with a little stagger by index
+                const idxFactor = Math.min(1, (i / PARTICLE_COUNT) + 0.12);
+                const et = Math.min(1, (t + (idxFactor * 0.12)));
+                const easeVal = 0.5 - 0.5*Math.cos(Math.PI * et); // easeInOutSine
+                posAttr[i*3] = sx + (tx - sx) * easeVal;
+                posAttr[i*3+1] = sy + (ty - sy) * easeVal;
+                posAttr[i*3+2] = sz + (tz - sz) * easeVal;
+              }
+              pGeo.attributes.position.needsUpdate = true;
+            },
+            complete: () => {
+              // as final, add gentle particle pulsation (scale via size)
+              anime({
+                targets: pMat,
+                // PointsMaterial doesn't have animatable numeric props with anime directly; we'll simulate via RAF
+                duration:2000,
+                easing:'easeInOutSine',
+                loop:true,
+                direction:'alternate',
+                update: anim => {
+                  // use opacity pulse
+                  pMat.opacity = 0.8 + 0.2 * Math.sin(anim.currentTime / 200);
+                }
+              });
+            }
+          });
+
+          // small base vanish
+          anime({
+            targets: base.scale,
+            x: [1, 0.08],
+            y: [1, 0.08],
+            z: [1, 0.08],
+            duration: 1200,
+            easing: 'easeInCubic'
+          });
+          anime({
+            targets: screen.scale,
+            x: [1, 0.06],
+            y: [1, 0.06],
+            z: [1, 0.06],
+            duration: 1200,
+            easing: 'easeInCubic'
+          });
+        }
+      }, '+=200');
+
+      // Final flourish: glow & title color shift
+      tl.add({
+        duration: 900,
+        begin: () => {
+          anime({
+            targets: 'span[data-neon="1"]',
+            color: ['#9fe9d6', '#fff'],
+            easing: 'easeInOutSine',
+            duration: 1200,
+            direction: 'alternate',
+            loop: 2
+          });
+          anime({
+            targets: pLight,
+            duration: 900,
+            update: () => { /* pLight updated already by earlier steps */ }
+          });
+        }
+      }, '+=200');
+
+      tl.play();
+    } // end playTransformation()
+
+    // Auto-play the transformation on load
+    window.addEventListener('load', () => {
+      if (!prefersReduced) {
+        // Start the transformation animation after a brief delay
+        setTimeout(playTransformation, 1000);
+        
+        // light timeline for page load just for text/underline
+        anime.timeline({easing:'easeOutExpo'})
+          .add({
+            targets: '.letter',
+            translateY: [120,0],
+            rotateZ: [18,0],
+            opacity: [0,1],
+            delay: anime.stagger(30)
+          })
+          .add({
+            targets: document.querySelector('.hero-underline path'),
+            strokeDashoffset: [anime.setDashoffset, 0],
+            duration: 900,
+            easing: 'easeInOutSine'
+          }, '-=700')
+          .add({
+            targets: '.hero-sub',
+            translateY:[20,0],
+            opacity:[0,1],
+            duration:700
+          }, '-=500');
+      } else {
+        // show static content if reduced motion
+        document.querySelectorAll('.letter').forEach(l => l.style.opacity = 1);
+        document.querySelectorAll('.hero-sub').forEach(s => s.style.opacity = 1);
+      }
+    });
+
+    // Learn more button functionality
+    document.getElementById('learnBtn').addEventListener('click', () => {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Modal functionality
+    const loginBtn = document.getElementById('login-btn');
+    const signupBtn = document.getElementById('signup-btn');
+    const loginModal = document.getElementById('login-modal');
+    const signupModal = document.getElementById('signup-modal');
+    const loginClose = document.getElementById('login-close');
+    const signupClose = document.getElementById('signup-close');
+
+    loginBtn.onclick = () => loginModal.style.display = 'flex';
+    signupBtn.onclick = () => signupModal.style.display = 'flex';
+
+    loginClose.onclick = () => loginModal.style.display = 'none';
+    signupClose.onclick = () => signupModal.style.display = 'none';
+
+    window.onclick = (event) => {
+      if (event.target == loginModal) {
+        loginModal.style.display = 'none';
+      }
+      if (event.target == signupModal) {
+        signupModal.style.display = 'none';
+      }
+    }
+
+    // Video player functionality
+    const videoModal = document.getElementById('video-modal');
+    const videoPlayer = document.getElementById('video-player');
+    const videoClose = document.getElementById('video-close');
+    const playVideoBtns = document.querySelectorAll('.play-video-btn');
+
+    playVideoBtns.forEach(btn => {
+      btn.onclick = () => {
+        const videoSrc = btn.getAttribute('data-video-src');
+        videoPlayer.src = videoSrc;
+        videoModal.style.display = 'flex';
+        videoPlayer.play();
+      }
+    });
+
+    videoClose.onclick = () => {
+      videoModal.style.display = 'none';
+      videoPlayer.pause();
+    }
+
+  })();
+  </script>
+  <script>
+    const signupForm = document.getElementById('signup-form');
+    const loginForm = document.getElementById('login-form');
+    const signupModal = document.getElementById('signup-modal');
+    const loginModal = document.getElementById('login-modal');
+    const loginBtn = document.getElementById('login-btn');
+    const signupBtn = document.getElementById('signup-btn');
+    const videosBtn = document.getElementById('videos-btn');
+    const logoutBtn = document.getElementById('logout-btn-nav');
+
+    const updateUI = () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        loginBtn.style.display = 'none';
+        signupBtn.style.display = 'none';
+        videosBtn.style.display = 'block';
+        logoutBtn.style.display = 'block';
+      } else {
+        loginBtn.style.display = 'block';
+        signupBtn.style.display = 'block';
+        videosBtn.style.display = 'none';
+        logoutBtn.style.display = 'none';
+      }
+    };
+
+    logoutBtn.addEventListener('click', () => {
+      localStorage.removeItem('token');
+      updateUI();
+    });
+
+    signupForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('signup-email').value;
+      const password = document.getElementById('signup-password').value;
+      const confirmPassword = document.getElementById('signup-confirm-password').value;
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      try {
+        const res = await fetch('/api/signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          localStorage.setItem('token', data.token);
+          signupModal.style.display = 'none';
+          updateUI();
+        } else {
+          const error = await res.json();
+          alert(error.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Server error');
+      }
+    });
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+
+      try {
+        const res = await fetch('/api/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          localStorage.setItem('token', data.token);
+          loginModal.style.display = 'none';
+          updateUI();
+        } else {
+          const error = await res.json();
+          alert(error.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Server error');
+      }
+    });
+
+    updateUI();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
