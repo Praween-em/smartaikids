@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Kids: Unlock Your Child's Future with Smart AI Kids</title>
+    <meta name="description" content="Discover the exciting world of AI for kids! Smart AI Kids offers fun, engaging courses and workshops to teach children the fundamentals of artificial intelligence.">
+    <style>
+:root{
+    --bg:#070710;
+    --accent: #00ffd1;
+    --accent2:#8a2be2;
+    --accent3:#ff00c8;
+    --muted:#9aa0a6;
+    --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#05050a,#0b0b12);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#e6eef8; scroll-behavior: smooth;}
+  /* NAV */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+    padding: 14px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-weight: 900; 
+    font-size: 2em; 
+    color: var(--accent);
+    letter-spacing: 0.4px;
+    margin: 0;
+  }
+  nav ul {
+    display:flex;
+    gap:18px;
+    list-style:none;
+    margin:0;
+    padding:0
+  }
+  nav a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.9
+  }
+  nav a:hover {
+    color:var(--accent);
+    opacity:1;
+    transform:translateY(-2px);
+    transition:all 0.3s ease
+  }
+  main {
+    padding: 120px 20px 80px;
+    position: relative;
+    z-index: 10;
+  }
+  article {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  h1, h2, h3 {
+    font-weight: 800;
+  }
+  h1 {
+    font-size: clamp(28px,6vw,64px);
+    line-height:1.02;
+    margin:0 0 10px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: clamp(24px, 5vw, 42px);
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: clamp(20px, 4vw, 32px);
+    margin-bottom: 15px;
+    color: var(--accent2);
+  }
+  p, li {
+    color:var(--muted);
+    font-size:clamp(14px,2vw,18px);
+    line-height: 1.6;
+  }
+  ul, ol, dl {
+    padding-left: 20px;
+  }
+  dt {
+    font-weight: 700;
+    color: var(--accent3);
+    margin-top: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .cta-button {
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#001;border:0;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,0.45);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .cta-button:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+    background: linear-gradient(90deg,var(--accent2),var(--accent3));
+    transform: scale(1.08);
+    transition: all 0.8s ease;
+    color:#fff;
+  }
+  footer {
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    padding: 60px 20px 30px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s;
+        background-color: var(--bg);
+    }
+    nav ul.active {
+        left: 0;
+    }
+    nav ul li {
+        padding: 1rem 0;
+    }
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Smart AI Kids</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai-for-kids.html">AI for Kids</a></li>
+                <li><a href="coding-for-kids.html">Coding for Kids</a></li>
+                <li><a href="python-for-kids.html">Python for Kids</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Unlock the World of AI for Kids</h1>
+            <p>Welcome to Smart AI Kids, where we make learning about Artificial Intelligence (AI) fun and accessible for children. You might have heard about AI in movies or news, and it might sound complicated, but we break it down into simple, engaging lessons. AI is all around us, from the games you play to the shows you watch. Understanding AI helps kids develop critical thinking and problem-solving skills, preparing them for the future.</p>
+
+            <h2>Why Should Kids Learn About AI?</h2>
+            <p>Learning about AI is more than just a fun hobby; it's a way to prepare for a future where technology plays a huge role. When kids learn about AI, they are not just learning to code; they are learning how to think in a more structured and logical way. This helps them in other subjects like math and science. Understanding AI also boosts creativity, as it allows children to create their own smart games, stories, and even robots. It’s a skill that will be incredibly valuable in many future careers.</p>
+
+            <h3>The Benefits of Learning AI for Kids</h3>
+            <ul>
+                <li><strong>Enhanced Problem-Solving Skills:</strong> AI teaches kids to break down complex problems into smaller, manageable parts.</li>
+                <li><strong>Boosts Creativity:</strong> With AI, children can create interactive projects and see their ideas come to life.</li>
+                <li><strong>Future-Proofs Their Skills:</strong> Understanding AI is becoming essential in many industries, giving your child a head start.</li>
+                <li><strong>Improves Critical Thinking:</strong> Kids learn to think logically and make decisions based on data.</li>
+            </ul>
+
+            <h2>How Smart AI Kids Teaches AI for Kids</h2>
+            <p>At Smart AI Kids, we have developed a unique approach to teaching AI for kids. Our curriculum is designed by experts to be both educational and entertaining. We use a combination of hands-on projects, interactive games, and real-world examples to make learning AI a breeze. Our courses are tailored to different age groups, ensuring that every child can learn at their own pace.</p>
+            <p>Our workshops are a great way to get a taste of what AI is all about. In these sessions, kids work on exciting projects like building a simple chatbot or creating a game that learns from the player. Our experienced instructors guide them every step of the way, making sure they understand the concepts behind the technology. We believe that the best way to learn is by doing, and our project-based approach ensures that kids are always engaged and motivated.</p>
+
+            <img src="ai-for-kids-learning.jpg" alt="A child learning about AI for kids with a robot.">
+
+            <h2>Fun AI Activities for Kids</h2>
+            <p>Ready to get started with some fun AI activities? Here are a few ideas you can try at home:</p>
+            <ul>
+                <li><strong>Teachable Machine:</strong> Use Google's Teachable Machine to train a simple AI model to recognize images, sounds, or poses. It's a great way to understand how machine learning works.</li>
+                <li><strong>Scratch AI Blocks:</strong> If your child is familiar with Scratch, they can use the AI extension blocks to create projects that recognize text, speech, and more.</li>
+                <li><strong>AI-Powered Games:</strong> Play games like "Akinator" that use AI to guess a character you are thinking of. This can be a fun way to see AI in action.</li>
+            </ul>
+
+            <img src="ai-activities-for-kids.jpg" alt="Kids engaged in fun AI for kids activities on laptops.">
+
+            <h2>Frequently Asked Questions about AI for Kids</h2>
+            <dl>
+                <dt>What is AI for kids?</dt>
+                <dd>AI for kids is a simplified and engaging way of teaching children the fundamentals of artificial intelligence. It focuses on hands-on projects and interactive learning to make complex topics easy to understand.</dd>
+                <dt>Is learning AI difficult for children?</dt>
+                <dd>Not at all! Our courses on AI for kids are designed to be fun and accessible. We use a project-based approach that allows children to learn by doing, which makes the learning process enjoyable and effective.</dd>
+                <dt>What are the benefits of teaching AI to kids?</dt>
+                <dd>Teaching AI for kids helps them develop crucial skills like problem-solving, critical thinking, and creativity. It also prepares them for future careers in a world that is increasingly driven by technology.</dd>
+                <dt>What age is appropriate to start learning about AI?</dt>
+                <dd>We offer AI for kids courses for children as young as 8. Our curriculum is tailored to different age groups to ensure that the content is appropriate and engaging for every child.</dd>
+            </dl>
+
+            <h2>Ready to Start Your AI Adventure?</h2>
+            <p>Join Smart AI Kids today and give your child the gift of knowledge. Our courses are designed to be fun, engaging, and educational, providing your child with the skills they need to succeed in the future. Sign up for a free trial and see for yourself how we make learning AI for kids an exciting adventure.</p>
+            <a href="#" class="cta-button">Join Now</a>
+
+            <h3>Suggested Reading</h3>
+            <ul>
+                <li><a href="ai-for-kids.html">AI for Kids</a></li>
+                <li><a href="coding-for-kids.html">Coding for Kids</a></li>
+                <li><a href="python-for-kids.html">Python for Kids</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart AI Kids. All rights reserved.</p>
+    </footer>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP and Computer Vision for Kids</title>
+    <meta name="description" content="Learn the basics of Natural Language Processing (NLP) and Computer Vision with Smart AI Kids. We make complex AI topics easy and fun for children.">
+    <style>
+:root{
+    --bg:#070710;
+    --accent: #00ffd1;
+    --accent2:#8a2be2;
+    --accent3:#ff00c8;
+    --muted:#9aa0a6;
+    --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#05050a,#0b0b12);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#e6eef8; scroll-behavior: smooth;}
+  /* NAV */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+    padding: 14px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-weight: 900; 
+    font-size: 2em; 
+    color: var(--accent);
+    letter-spacing: 0.4px;
+    margin: 0;
+  }
+  nav ul {
+    display:flex;
+    gap:18px;
+    list-style:none;
+    margin:0;
+    padding:0
+  }
+  nav a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.9
+  }
+  nav a:hover {
+    color:var(--accent);
+    opacity:1;
+    transform:translateY(-2px);
+    transition:all 0.3s ease
+  }
+  main {
+    padding: 120px 20px 80px;
+    position: relative;
+    z-index: 10;
+  }
+  article {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  h1, h2, h3 {
+    font-weight: 800;
+  }
+  h1 {
+    font-size: clamp(28px,6vw,64px);
+    line-height:1.02;
+    margin:0 0 10px;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: clamp(24px, 5vw, 42px);
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: clamp(20px, 4vw, 32px);
+    margin-bottom: 15px;
+    color: var(--accent2);
+  }
+  p, li {
+    color:var(--muted);
+    font-size:clamp(14px,2vw,18px);
+    line-height: 1.6;
+  }
+  ul, ol, dl {
+    padding-left: 20px;
+  }
+  dt {
+    font-weight: 700;
+    color: var(--accent3);
+    margin-top: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .cta-button {
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#001;border:0;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,0.45);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .cta-button:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+    background: linear-gradient(90deg,var(--accent2),var(--accent3));
+    transform: scale(1.08);
+    transition: all 0.8s ease;
+    color:#fff;
+  }
+  footer {
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    padding: 60px 20px 30px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s;
+        background-color: var(--bg);
+    }
+    nav ul.active {
+        left: 0;
+    }
+    nav ul li {
+        padding: 1rem 0;
+    }
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Smart AI Kids</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai-for-kids.html">AI for Kids</a></li>
+                <li><a href="coding-for-kids.html">Coding for Kids</a></li>
+                <li><a href="python-for-kids.html">Python for Kids</a></li>
+                <li><a href="what-is-smart-ai-kids.html">About Us</a></li>
+                <li><a href="nlp-and-cv-for-kids.html">NLP & CV</a></li>
+                <li><a href="ai-fundamentals-for-kids.html">AI Fundamentals</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Teaching AI to See and Understand</h1>
+            <p>Welcome to two of the most exciting fields in Artificial Intelligence: Natural Language Processing (NLP) and Computer Vision (CV). At Smart AI Kids, we break down these complex topics into fun, understandable concepts for kids.</p>
+
+            <h2>Natural Language Processing (NLP) for Kids</h2>
+            <p>Have you ever talked to a smart speaker like Alexa or Siri? That's NLP in action! NLP is how we teach computers to understand and use human language. It's like teaching a robot to read, write, and talk like a person.</p>
+            <h3>What Kids Can Learn about NLP:</h3>
+            <ul>
+                <li><strong>Sentiment Analysis:</strong> Teaching a computer to understand if a sentence is happy, sad, or neutral.</li>
+                <li><strong>Chatbots:</strong> Building a simple chatbot that can answer questions.</li>
+                <li><strong>Language Translation:</strong> Understanding how computers can translate from one language to another.</li>
+            </ul>
+
+            <img src="nlp-for-kids.jpg" alt="An illustration showing how computers process human language.">
+
+            <h2>Computer Vision Basics for Kids</h2>
+            <p>Computer Vision is how we teach computers to "see" and understand the world around them. It's the technology behind self-driving cars, face filters on social media, and even apps that can identify plants and animals from a picture.</p>
+            <h3>What Kids Can Learn about Computer Vision:</h3>
+            <ul>
+                <li><strong>Image Recognition:</strong> Training a computer to tell the difference between a cat and a dog.</li>
+                <li><strong>Object Detection:</strong> Teaching a computer to find and identify objects in a picture.</li>
+                <li><strong>Facial Recognition:</strong> Understanding the basics of how computers can recognize faces.</li>
+            </ul>
+
+            <img src="cv-for-kids.jpg" alt="An image showing a computer identifying objects in a picture.">
+
+            <h2>Fun Projects with NLP and Computer Vision</h2>
+            <p>The best way to learn is by doing! Here are some fun projects that combine NLP and Computer Vision:</p>
+            <ul>
+                <li><strong>Storytelling with AI:</strong> Create a program that generates a story based on an image.</li>
+                <li><strong>Emotion-Based Music Player:</strong> Build a tool that plays happy or sad music based on the user's facial expression.</li>
+                <li><strong>Smart Sorting Machine:</strong> Use a camera to sort objects by color or shape.</li>
+            </ul>
+
+            <h2>Get Started with NLP and CV</h2>
+            <p>Are you ready to teach a computer to see and talk? Our courses on NLP and Computer Vision for kids are the perfect place to start. No prior experience is needed!</p>
+            <a href="/index.html" class="cta-button">Explore Courses</a>
+
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart AI Kids. All rights reserved.</p>
+    </footer>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+</html>
