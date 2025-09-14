@@ -1,13 +1,4 @@
-# robots.txt for https://www.smartaikids.in/
-
 User-agent: *
 Allow: /
 
-# Optional: block only sensitive areas (if they exist)
-Disallow: /wp-admin/
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /private/
-
-# Sitemap location
 Sitemap: https://www.smartaikids.in/sitemap.xml
